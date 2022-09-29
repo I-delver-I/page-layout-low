@@ -1,0 +1,301 @@
+body 
+{
+    margin: 0px;
+    display: inline-block;
+}
+
+h1
+{
+    padding-top: 60px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+h2
+{
+    color: white;
+}
+
+h3, p
+{
+    font-size: 16pt;
+    margin-top: 3px;
+    color: white;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.content__text {
+    color: black;
+}
+
+.subscribe-hint {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hr {
+    margin: 0 auto;
+    height: 6px;
+    width: 60px;
+    background-color: #f1f1f1;
+}
+
+a {
+    transition: 0.8s;
+}
+
+a:visited {
+    color: red;
+}
+
+a:link {
+    color: grey;
+}
+
+a:hover {
+    background-color: rgba(25, 0, 255, 0.596);
+}
+
+.works {
+    margin: 0 auto;
+    display: block;
+    background-color: red;
+    margin-bottom: 100px;
+    max-width: 1100px;
+    margin-top: 40px;
+}
+
+.work {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 265px;
+    height: 265px;
+    background-color: rgb(255, 77, 77);
+    transition: .5s, -webkit-mask-position .3s .3s;
+}
+
+.work:hover {
+    transform: scale(1.2);
+    
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+    -webkit-mask: 
+        conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+        var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+        conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+        0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+    --_i: 100%;
+    color: #CC333F;
+    transition: .5s, -webkit-mask-size .3s .3s;
+}
+
+.network_icon {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    padding: 13px;
+    border: solid;
+    margin: 10px;
+    border-radius: 10%;
+    vertical-align: middle;
+}
+
+.work__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work__icon {
+    margin-top: 60px;
+}
+
+header {
+    text-align: center;
+    font-family: Calibri;
+    background-color: red;
+    display: inline-block;
+    width: 100%;
+}
+
+.mid {
+    background-color: rgb(77, 121, 255);
+    text-align: center;
+    font-family: Calibri;
+    padding-bottom: 75px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(36, 37, 37);
+    text-align: center;
+    font-family: Calibri;
+    display: inline-block;
+    width: 100%;
+}
+
+.copyright {
+    background-color: grey;
+    padding: 20px;
+}
+
+.content__form {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.content_triangle {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid #f1f1f1;
+}
+
+.email-input {
+    width: 45%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+}
+
+.email-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.collapse-input {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.collapse-input::placeholder {
+    color: grey;
+    opacity: 1; 
+}
+
+.btn {
+    margin: 0 auto;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    text-align: center;
+}
+
+.btn:hover
+{
+    background-color: rgb(161, 42, 161);
+}
+
+.esc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: max-height 0.2s ease-out;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid white;
+    transform: translate(50%, -50%);
+    background-color: red;
+}
+
+.esc:before, .esc:after {
+    margin: auto;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: white;
+}
+
+.esc:before {
+    transform: rotate(45deg);
+}
+
+.esc:after {
+    transform: rotate(-45deg);
+}
+
+.subscribe {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    background-color: rgb(36, 37, 37);
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5%;
+    font-weight: 700;
+}
+
+.analysis {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type='checkbox'] { 
+    display: none; 
+} 
+
+.lbl-toggle { 
+    margin: 0 auto;
+    display: block; 
+    color: white; 
+    background: rgb(77, 121, 255); 
+    cursor: pointer; 
+    border: 2px solid white;
+    border-radius: 50%; 
+    height: 50px;
+    width: 50px;
+} 
+
+.lbl-toggle::before {
+    border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	position: relative;
+	bottom: -20%;
+	vertical-align: middle;
+	width: 0.45em;
+	transform: rotate(135deg);
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+    max-height: 500px; 
+    display: inline-block;
+}
+
+.collapsible-content {
+    display: none;
+    transition: max-height 0.2s ease-out;
+    width: 55%;
+    max-height: 0px; 
+    background-color: rgb(77, 121, 255); 
+    margin: 0 auto;
+    margin-top: 20px;
+}
